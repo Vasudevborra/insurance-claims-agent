@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Backups and archives (Excluded from repository)
+backup*/
+*backup*
+*.bak
+*.zip
+app_original_backup.py
+app.zip
+
+# Streamlit configuration and secrets
+.streamlit/
+secrets.toml
+
+# Environment variables & API keys
+.env
+.env.*
+*.env
+*.key
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini

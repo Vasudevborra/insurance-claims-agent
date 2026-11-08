@@ -1,0 +1,11 @@
+test_id,scenario,inputs,expected_behavior
+T01,Covered low-value claim,"POL-200; hospitalization; ₹45,000; 2 days; policy age 365",Covered; estimate calculated; human sign-off still required
+T02,Waiting period not met,POL-100; hospitalization; 20 days policy age,Coverage rule not satisfied; human review
+T03,Unsupported benefit,POL-100; maternity,Not covered by configured policy; human review
+T04,High-value claim,"Claim amount ₹2,50,000",High priority; human review
+T05,Watchlisted synthetic provider,Provider PRV-999,Fraud-risk flag shown; no fraud determination
+T06,Incomplete documents,documents_complete = false,Intake incomplete; high-priority human review
+T07,Long admission,Admission days = 12,Fraud-risk indicator; reviewer assessment
+T08,Unknown policy,Policy ID not in configured set,Policy not found; no estimated payable; human review
+T09,Prior similar claim,prior_similar_claim = true,Risk flag; no autonomous denial
+T10,All standard checks clear,"Low amount, complete docs, no flags, covered type",Standard queue but mandatory human sign-off
